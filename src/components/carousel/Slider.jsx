@@ -80,7 +80,7 @@ export default function Slider() {
           // }}
           // pagination={true}
           navigation={true}
-          loop={true}
+   
           modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
           className="gameSwiper"
         >
