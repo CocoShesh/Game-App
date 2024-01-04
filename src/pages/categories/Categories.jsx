@@ -8,9 +8,9 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 const stars = [<AiFillStar />, <AiFillStar />, <AiFillStar />];
 const categ = ["ALL", "RPG", "MOBA", "Battle", "Racing", "Fighting"];
-
+import games from "/public/api/Games";
 const Categories = () => {
-  const [url, setUrl] = useState([]);
+  const [url, setUrl] = useState(games);
   const [isInput, setIsInput] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("ALL");
   const { items, addToLibrary, addToCart } = useContext(CartContext);
@@ -27,16 +27,8 @@ const Categories = () => {
       item.title.toLowerCase().includes(isInput.toLowerCase());
     return categoryFilter && searchFilter;
   });
-  const handleUrl = () => {
-    const data = "/public/api/gamesData.json";
-
-    fetch(data)
-      .then(response => response.json())
-      .then(data => setUrl(data));
-  };
 
   useEffect(() => {
-    handleUrl();
     Aos.init();
   }, []);
 
