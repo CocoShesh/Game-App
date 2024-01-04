@@ -20,6 +20,7 @@ import {
 
 export default function Slider() {
   const [isOpen, setIsOpen] = useState([]);
+  const [data, setData] = useState(games);
 
   useEffect(() => {
     AOS.init();
@@ -55,7 +56,7 @@ export default function Slider() {
           modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
           className="gameSwiper"
         >
-          {games.map((item, index) => {
+          {data.map((item, index) => {
             return (
               <SwiperSlide key={item._id} className=" text-white relative">
                 <div data-aos="zoom-in" className="game-slider  ">
