@@ -66,7 +66,7 @@ export default function Slider() {
           effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
-          slidesPerView={"2"}
+          slidesPerView={2}
           coverflowEffect={{
             rotate: 35,
             stretch: 250,
@@ -80,7 +80,6 @@ export default function Slider() {
           // }}
           // pagination={true}
           navigation={true}
-   
           modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
           className="gameSwiper"
         >
@@ -140,5 +139,3 @@ export default function Slider() {
     </>
   );
 }
-
-
