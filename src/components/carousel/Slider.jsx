@@ -24,26 +24,24 @@ export default function Slider() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-  const fetchData = async () => {
-    try {
-      const url = "/api/gamesData.json";
-      const response = await fetch(url);
-
-      if (!response.ok) {
-        console.log("Error fetching data");
-        return;
-      }
-
-      const data = await response.json();
-      setData(data);
-      setIsOpen(new Array(data.length).fill(false));
-    } catch (error) {
-      console.error("Fetch error:", error);
-    }
-  };
-
-  fetchData();
-}, []);
+    const url = "/api/gamesData.jsx";
+    fetch(url)
+      .then(response => {
+        if (!response.ok) {
+          console.log("error");
+        } else {
+          return response.json();
+        }
+      })
+      .then(data => {
+        setData(data);
+        // Initialize isOpen array with false values for each slide
+        setIsOpen(new Array(data.length).fill(false));
+      })
+      .catch(error => {
+        console.error("Fetch error:", error);
+      });
+  }, []);
 
   useEffect(() => {
     AOS.init();
