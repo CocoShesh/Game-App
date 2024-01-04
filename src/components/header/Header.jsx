@@ -29,7 +29,7 @@ const Header = () => {
             <BsBagCheck className="text-2xl text-white" />
           </Badge>
           <img
-            src="/public/second_pic.jpg"
+            src="./second_pic.jpg"
             alt=""
             className="w-[30px] h-[30px] rounded-full"
           />
