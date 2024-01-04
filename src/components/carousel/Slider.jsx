@@ -53,6 +53,7 @@ export default function Slider() {
             slideShadows: true,
           }}
           navigation={true}
+            loop={true}
           modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
           className="gameSwiper"
         >
