@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import games from "/public/api/Games";
 import { HiMiniPause } from "react-icons/hi2";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { BsPlayFill } from "react-icons/bs";
 import TitleSection from "../title-section/TitleSection";
-
-// Import Swiper styles
+import Header from "../header/Header";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
@@ -17,39 +17,16 @@ import {
   Navigation,
   Autoplay,
 } from "swiper/modules";
-import Header from "../header/Header";
 
 export default function Slider() {
-  const [isOpen, setIsOpen] = useState({}); // Maintain an array of isOpen states
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    const url = "/api/gamesData.jsx";
-    fetch(url)
-      .then(response => {
-        if (!response.ok) {
-          console.log("error");
-        } else {
-          return response.json();
-        }
-      })
-      .then(data => {
-        setData(data);
-        // Initialize isOpen array with false values for each slide
-        setIsOpen(new Array(data.length).fill(false));
-      })
-      .catch(error => {
-        console.error("Fetch error:", error);
-      });
-  }, []);
+  const [isOpen, setIsOpen] = useState([]);
 
   useEffect(() => {
     AOS.init();
-  });
+  }, []);
 
-  // Function to toggle the modal for a specific slide
   const toggleModal = index => {
-    const updatedIsOpen = [...isOpen];
+    const updatedIsOpen = { ...isOpen };
     updatedIsOpen[index] = !updatedIsOpen[index];
     setIsOpen(updatedIsOpen);
   };
@@ -57,7 +34,7 @@ export default function Slider() {
   return (
     <>
       <section
-        className="flex flex-col items-center w-[1050px] custom-shadow my-5    max-sm:w-full"
+        className="flex flex-col items-center w-[1050px] custom-shadow my-5 max-sm:w-full"
         id="center"
       >
         <Header />
@@ -74,16 +51,11 @@ export default function Slider() {
             modifier: 1,
             slideShadows: true,
           }}
-          // autoplay={{
-          //   delay: 2500,
-          //   disableOnInteraction: true,
-          // }}
-          // pagination={true}
           navigation={true}
           modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
           className="gameSwiper"
         >
-          {data.map((item, index) => {
+          {games.map((item, index) => {
             return (
               <SwiperSlide key={item._id} className=" text-white relative">
                 <div data-aos="zoom-in" className="game-slider  ">
