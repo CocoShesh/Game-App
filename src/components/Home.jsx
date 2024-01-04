@@ -7,7 +7,7 @@ const Home = () => {
     <>
       <main className=" main flex h-[780px] w-full  max-md:h-[1100px] max-md:w-auto  ">
         <SideMenu />
-{/*         <Slider /> */}
+        <Slider />
       </main>
     </>
   );
