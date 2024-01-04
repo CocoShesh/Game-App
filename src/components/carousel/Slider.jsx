@@ -24,7 +24,7 @@ export default function Slider() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    const url = "api/gamesData.json";
+    const url = "/api/gamesData.json";
     fetch(url)
       .then(response => {
         if (!response.ok) {
