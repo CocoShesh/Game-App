@@ -26,7 +26,7 @@ export default function Slider() {
   useEffect(() => {
   const fetchData = async () => {
     try {
-      const url = "/public/api/gamesData.json";
+      const url = "/api/gamesData.json";
       const response = await fetch(url);
 
       if (!response.ok) {
