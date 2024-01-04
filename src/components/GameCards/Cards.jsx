@@ -3,17 +3,14 @@ import { AiFillStar, AiFillHeart } from "react-icons/ai";
 import { BsBagPlusFill } from "react-icons/bs";
 const stars = [<AiFillStar />, <AiFillStar />, <AiFillStar />];
 import AOS from "aos";
+import games from "../../../public/api/Games";
 import "aos/dist/aos.css";
 const Cards = () => {
-  const url = "/public/api/gamesData.json";
-  const [gameData, setGameData] = useState([]);
+  const [gameData, setGameData] = useState(games);
 
   useEffect(() => {
     AOS.init();
-    fetch(url)
-      .then(response => response.json())
-      .then(data => setGameData(data.slice(0, 4)))
-      .catch(error => console.error("Error fetching data:", error));
+    setGameData(gameData.slice(0, 4));
   }, []);
 
   return (
