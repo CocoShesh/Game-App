@@ -8,7 +8,7 @@
     "rating": 3,
     "discount": 0.5,
     "price": 79.0,
-    "img": "/public/assets/games/lol-bg.jpeg",
+    "img": "/games/lol-bg.jpeg",
     "trailer": "https://www.youtube.com/embed/vzHrjOMfHPY",
 
     "active": true
@@ -22,7 +22,7 @@
     "rating": 3,
     "discount": 0.3,
     "price": 52.56,
-    "img": "/public/assets/games/mario-bg.jpeg",
+    "img": "/games/mario-bg.jpeg",
     "trailer": "https://www.youtube.com/embed/tKlRN2YpxRE",
     "active": false
   },
@@ -36,7 +36,7 @@
     "rating": 4,
     "discount": 0.3,
     "price": 85.0,
-    "img": "/public/assets/games/dota-2-bg.jpg",
+    "img": "/games/dota-2-bg.jpg",
     "trailer": "https://www.youtube.com/embed/-cSFPIwMEq4",
     "active": false
   },
@@ -49,7 +49,7 @@
     "rating": 3,
     "discount": 0.2,
     "price": 65.6,
-    "img": "/public/assets/games/king-of-fighters-xv.jpeg",
+    "img": "/games/king-of-fighters-xv.jpeg",
     "trailer": "https://www.youtube.com/embed/_o7Ip64-Sio",
     "active": false
   },
@@ -63,7 +63,7 @@
     "rating": 4,
     "discount": 0,
     "price": 129.0,
-    "img": "/public/assets/games/forza-horizon-5-bg.jpeg",
+    "img": "/games/forza-horizon-5-bg.jpeg",
     "trailer": "https://www.youtube.com/embed/FYH9n37B7Yw",
     "active": false
   },
@@ -76,7 +76,7 @@
     "rating": 4,
     "discount": 0,
     "price": 85.8,
-    "img": "/public/assets/games/halo-infinite-bg.jpeg",
+    "img": "/games/halo-infinite-bg.jpeg",
     "trailer": "https://www.youtube.com/embed/PyMlV5_HRWk",
     "active": false
   },
@@ -89,7 +89,7 @@
     "rating": 3,
     "discount": 0.6,
     "price": 69.0,
-    "img": "/public/assets/games/fortnite-bg.jpeg",
+    "img": "/games/fortnite-bg.jpeg",
     "trailer": "https://www.youtube.com/embed/7bq0Boq2B3Y",
     "active": false
   },
@@ -102,7 +102,7 @@
     "rating": 5,
     "discount": 0.5,
     "price": 99.0,
-    "img": "/public/assets/games/diablo-3-bg.jpeg",
+    "img": "/assets/games/diablo-3-bg.jpeg",
     "trailer": "https://www.youtube.com/embed/M2TpNQhfkp4",
     "active": false
   },
@@ -115,7 +115,7 @@
     "rating": 5,
     "discount": 0.5,
     "price": 99.0,
-    "img": "/public/assets/games/diablo-3-bg.jpeg",
+    "img": "/assets/games/diablo-3-bg.jpeg",
     "trailer": "https://www.youtube.com/embed/M2TpNQhfkp4",
     "active": false
   },
@@ -128,7 +128,7 @@
     "rating": 5,
     "discount": 0.5,
     "price": 99.0,
-    "img": "/public/assets/games/diablo-3-bg.jpeg",
+    "img": "/assets/games/diablo-3-bg.jpeg",
     "trailer": "https://www.youtube.com/embed/M2TpNQhfkp4",
     "active": false
   },
@@ -141,7 +141,7 @@
     "rating": 5,
     "discount": 0.5,
     "price": 99.0,
-    "img": "/public/assets/games/diablo-3-bg.jpeg",
+    "img": "/assets/games/diablo-3-bg.jpeg",
     "trailer": "https://www.youtube.com/embed/M2TpNQhfkp4",
     "active": false
   },
@@ -154,7 +154,7 @@
     "rating": 5,
     "discount": 0.5,
     "price": 99.0,
-    "img": "/public/assets/games/diablo-3-bg.jpeg",
+    "img": "/assets/games/diablo-3-bg.jpeg",
     "trailer": "https://www.youtube.com/embed/M2TpNQhfkp4",
     "active": false
   },
@@ -167,7 +167,7 @@
     "rating": 5,
     "discount": 0.5,
     "price": 99.0,
-    "img": "/public/assets/games/diablo-3-bg.jpeg",
+    "img": "/assets/games/diablo-3-bg.jpeg",
     "trailer": "https://www.youtube.com/embed/M2TpNQhfkp4",
     "active": false
   },
@@ -180,7 +180,7 @@
     "rating": 5,
     "discount": 0.5,
     "price": 99.0,
-    "img": "/public/assets/games/diablo-3-bg.jpeg",
+    "img": "/assets/games/diablo-3-bg.jpeg",
     "trailer": "https://www.youtube.com/embed/M2TpNQhfkp4",
     "active": false
   },
@@ -193,7 +193,7 @@
     "rating": 5,
     "discount": 0.5,
     "price": 99.0,
-    "img": "/public/assets/games/diablo-3-bg.jpeg",
+    "img": "/assets/games/diablo-3-bg.jpeg",
     "trailer": "https://www.youtube.com/embed/M2TpNQhfkp4",
     "active": false
   }
