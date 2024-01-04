@@ -20,7 +20,7 @@ import {
 import Header from "../header/Header";
 
 export default function Slider() {
-  const [isOpen, setIsOpen] = useState([]); // Maintain an array of isOpen states
+  const [isOpen, setIsOpen] = useState({}); // Maintain an array of isOpen states
   const [data, setData] = useState([]);
 
   useEffect(() => {
